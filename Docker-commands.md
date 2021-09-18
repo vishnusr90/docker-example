@@ -26,3 +26,15 @@ docker-compose up
 
 ## Stop
 docker-compose down
+
+## Kill container
+docker container kill container_name
+
+## Kill all running containers
+docker container kill ${docker ps -q}
+
+## Delete container
+docker container rm container_name
+
+## Delet all containers not running
+docker container rm ${docker ps -a -q}
